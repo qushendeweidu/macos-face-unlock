@@ -1,5 +1,9 @@
 # FaceUnlock for macOS
 
+<p align="center">
+  <img src="Resources/AppIcon.png" width="128" alt="FaceUnlock icon">
+</p>
+
 一款轻量级的 macOS 菜单栏人脸解锁工具，基于 Swift、AppKit 和 Apple Vision 框架构建。
 
 无需 Electron、无需捆绑机器学习模型、无需第三方运行时环境，也不需要网络连接。所有人脸识别和匹配操作均在本地设备完成。
@@ -21,8 +25,9 @@
 - 支持锁屏和唤醒事件触发人脸识别。
 - 支持可选的锁屏自动输入密码功能。
 - 使用加密方式存储本地人脸特征模板和密码，摄像头采集的图像帧不会写入磁盘。
+- 自带透明圆角 App 图标，并附带同款 DMG 卷图标。
 - 支持通过 `SMAppService` 设置登录时自动启动，同时提供 LaunchAgent 备用方案。
-- 资源占用轻量：应用体积约 400 KB，空闲内存占用约 40 MB，空闲 CPU 占用率为 0%。
+- 资源占用轻量：应用体积约 1.2 MB（含图标），空闲内存约 40 MB，空闲 CPU 占用率为 0%。
 
 ## 工作原理
 
@@ -46,7 +51,7 @@
 
 ```bash
 ./scripts/build_app.sh
-./scripts/package_dmg.sh v0.1.0
+./scripts/package_dmg.sh v0.1.1
 open dist/FaceUnlock.app
 ```
 
