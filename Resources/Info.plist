@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleExecutable</key>
+    <string>FaceUnlock</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.local.faceunlock</string>
+    <key>CFBundleName</key>
+    <string>FaceUnlock</string>
+    <key>CFBundleDisplayName</key>
+    <string>FaceUnlock</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>0.1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>15.0</string>
+    <key>LSUIElement</key>
+    <true/>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+    <key>NSQuitAlwaysKeepsWindows</key>
+    <false/>
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+    <key>NSCameraUsageDescription</key>
+    <string>用于通过摄像头识别人脸，解锁你的 Mac。画面只在内存中处理，不会保存。</string>
+</dict>
+</plist>
