@@ -36,8 +36,11 @@ A lightweight menu bar face unlock tool for macOS, built with Swift, AppKit, and
 
 ```bash
 ./scripts/build_app.sh
+./scripts/package_dmg.sh v0.1.0
 open dist/FaceUnlock.app
 ```
+
+The DMG contains `FaceUnlock.app` and an `Applications` shortcut for drag-and-drop installation.
 
 The build uses ad-hoc code signing. The app bundle is kept immutable at runtime; all mutable data lives in Application Support.
 
